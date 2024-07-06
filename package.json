@@ -1,0 +1,14 @@
+{
+	"name": "cordova-plugin-kofax",
+	"version": "3.7.0",
+	"description": "Plugin to use the Kofax Mobile SDK Features",
+	"main": "kfxMobilePlugin.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"Kofax"
+	],
+	"author": "Kofax",
+	"license": "SEE LICENSE IN LICENSE.txt"
+}

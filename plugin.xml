@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Plugin.xml -->
+<!-- Copyright (c) 2012 - 2021 Kofax. Use of this code is with permission pursuant to Kofax license terms. -->
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:rim="http://www.blackberry.com/ns/widgets"
+	id="com.kofax.cordova"
+	version="3.7.0">
+
+<name>Kofax Phonegap SDK</name>
+<description>PhoneGap plugin for accessing kofax mobile SDK</description>
+<author>Kofax Hyderabad Development Team</author>
+
+<info>
+
+</info>
+
+<engines>
+   <engine name="cordova-android" version="<10.0.0" />
+</engines>
+
+<js-module src="www/kfxMobilePlugin.js" name="kfxMobilePlugin">
+	<clobbers target="kfxCordova" />
+</js-module>
+<js-module src="www/License.js" name="kfxMobilePlugin.License">
+	<clobbers target="kfxCordova.License" />
+</js-module>
+<js-module src="www/Logging.js" name="kfxMobilePlugin.Logging">
+	<clobbers target="kfxCordova.Logging" />
+</js-module>
+<js-module src="www/ImageCaptureControl.js" name="kfxMobilePlugin.ImageCaptureControl">
+    <clobbers target="kfxCordova.ImageCaptureControl" />
+</js-module>
+
+<js-module src="www/CheckCaptureExperience.js" name="kfxMobilePlugin.CheckCaptureExperience">
+    <clobbers target="kfxCordova.CheckCaptureExperience" />
+</js-module>
+<js-module src="www/FixedAspectRatioCaptureExperience.js" name="kfxMobilePlugin.FixedAspectRatioCaptureExperience">
+    <clobbers target="kfxCordova.FixedAspectRatioCaptureExperience" />
+</js-module>
+<js-module src="www/DocumentCaptureExperience.js" name="kfxMobilePlugin.DocumentCaptureExperience">
+    <clobbers target="kfxCordova.DocumentCaptureExperience" />
+</js-module>
+<js-module src="www/PassportCaptureExperience.js" name="kfxMobilePlugin.PassportCaptureExperience">
+    <clobbers target="kfxCordova.PassportCaptureExperience" />
+</js-module>
+<js-module src="www/SelfieCaptureExperience.js" name="kfxMobilePlugin.SelfieCaptureExperience">
+    <clobbers target="kfxCordova.SelfieCaptureExperience" />
+</js-module>
+<js-module src="www/CaptureServer.js" name="kfxMobilePlugin.CaptureServer">
+    <clobbers target="kfxCordova.CaptureServer" />
+</js-module>
+<js-module src="www/ServerExtractor.js" name="kfxMobilePlugin.ServerExtractor">
+    <clobbers target="kfxCordova.ServerExtractor" />
+</js-module>
+<js-module src="www/FieldTypeObject.js" name="kfxMobilePlugin.FieldTypeObject">
+    <clobbers target="kfxCordova.FieldTypeObject" />
+</js-module>
+<js-module src="www/FieldObject.js" name="kfxMobilePlugin.FieldObject">
+    <clobbers target="kfxCordova.FieldObject" />
+</js-module>
+<js-module src="www/DocumentTypeObject.js" name="kfxMobilePlugin.DocumentTypeObject">
+    <clobbers target="kfxCordova.DocumentTypeObject" />
+</js-module>
+<js-module src="www/DocumentTypesArray.js" name="kfxMobilePlugin.DocumentTypesArray">
+    <clobbers target="kfxCordova.DocumentTypesArray" />
+</js-module>
+<js-module src="www/DocumentObject.js" name="kfxMobilePlugin.DocumentObject">
+    <clobbers target="kfxCordova.DocumentObject" />
+</js-module>
+<js-module src="www/DocumentsArray.js" name="kfxMobilePlugin.DocumentsArray">
+    <clobbers target="kfxCordova.DocumentsArray" />
+</js-module>
+<js-module src="www/PageObject.js" name="kfxMobilePlugin.PageObject">
+    <clobbers target="kfxCordova.PageObject" />
+</js-module>
+<js-module src="www/PagesArray.js" name="kfxMobilePlugin.PagesArray">
+    <clobbers target="kfxCordova.PagesArray" />
+</js-module>
+<js-module src="www/UserProfileObject.js" name="kfxMobilePlugin.UserProfileObject">
+    <clobbers target="kfxCordova.UserProfileObject" />
+</js-module>
+<js-module src="www/BarcodeCaptureControl.js" name="kfxMobilePlugin.BarcodeCaptureControl">
+    <clobbers target="kfxCordova.BarcodeCaptureControl" />
+</js-module>
+<js-module src="www/ImageReviewControl.js" name="kfxMobilePlugin.ImageReviewControl">
+    <clobbers target="kfxCordova.ImageReviewControl" />
+</js-module>
+<js-module src="www/AppStatsObject.js" name="kfxMobilePlugin.AppStatsObject">
+	<clobbers target="kfxCordova.AppStatsObject" />
+</js-module>
+<js-module src="www/ActionUtils.js" name="kfxMobilePlugin.ActionUtils">
+	<clobbers target="kfxCordova.ActionUtils" />
+</js-module>
+<js-module src="www/ImageObject.js" name="kfxMobilePlugin.ImageObject">
+	<clobbers target="kfxCordova.ImageObject" />
+</js-module>
+<js-module src="www/ImageArray.js" name="kfxMobilePlugin.ImageArray">
+	<clobbers target="kfxCordova.ImageArray" />
+</js-module>
+<js-module src="www/ImageProcessor.js" name="kfxMobilePlugin.ImageProcessor">
+	<clobbers target="kfxCordova.ImageProcessor" />
+</js-module>
+<js-module src="www/OnDeviceExtraction.js" name="kfxMobilePlugin.OnDeviceExtraction">
+	<clobbers target="kfxCordova.OnDeviceExtraction" />
+</js-module>
+<js-module src="www/BundleCacheProvider.js" name="kfxMobilePlugin.BundleCacheProvider">
+    <clobbers target="kfxCordova.BundleCacheProvider" />
+</js-module>
+<js-module src="www/LocalProjectProvider.js" name="kfxMobilePlugin.LocalProjectProvider">
+    <clobbers target="kfxCordova.LocalProjectProvider" />
+</js-module>
+<js-module src="www/ServerProjectProvider.js" name="kfxMobilePlugin.ServerProjectProvider">
+    <clobbers target="kfxCordova.ServerProjectProvider" />
+</js-module>
+<js-module src="www/QuickExtractor.js" name="kfxMobilePlugin.QuickExtractor">
+    <clobbers target="kfxCordova.QuickExtractor" />
+</js-module>
+<js-module src="www/QuickExtractorAgent.js" name="kfxMobilePlugin.QuickExtractorAgent">
+    <clobbers target="kfxCordova.QuickExtractorAgent" />
+</js-module>
+<js-module src="www/GlareRemover.js" name="kfxMobilePlugin.GlareRemover">
+    <clobbers target="kfxCordova.GlareRemover" />
+</js-module>
+<js-module src="www/NFCTagReader.js" name="kfxMobilePlugin.NFCTagReader">
+    <clobbers target="kfxCordova.NFCTagReader" />
+</js-module>
+<js-module src="www/NFCTagParameters.js" name="kfxMobilePlugin.NFCTagParameters">
+    <clobbers target="kfxCordova.NFCTagParameters" />
+</js-module>
+<js-module src="www/NFCTagData.js" name="kfxMobilePlugin.NFCTagData">
+    <clobbers target="kfxCordova.NFCTagData" />
+</js-module>
+<js-module src="www/MRZResult.js" name="kfxMobilePlugin.MRZResult">
+    <clobbers target="kfxCordova.MRZResult" />
+</js-module>
+
+<platform name="ios">
+	<!-- config file -->
+	<config-file target="config.xml" parent="/*">
+		<feature name="kfxPlugin">
+			<param name="ios-package" value="kfxPlugin" />
+		</feature>
+        <preference name="DisallowOverscroll" value="true" />
+        <preference name="webviewbounce" value="false" />
+	</config-file>
+
+	<config-file target="*-Info.plist" parent="NSAppTransportSecurity">
+			<dict>
+			  <!--Include to allow all connections (DANGER)-->
+			  <key>NSAllowsArbitraryLoads</key>
+			      <true/>
+			</dict>
+	</config-file>
+
+    <config-file target="*-Info.plist" parent="NSCameraUsageDescription">
+        <string>Need camera access to take pictures</string>
+    </config-file>
+    <config-file target="*-Info.plist" parent="NSPhotoLibraryUsageDescription">
+        <string>Need photo library access to get pictures from there</string>
+    </config-file>
+    <config-file target="*-Info.plist" parent="NSPhotoLibraryAddUsageDescription">
+        <string>Need photo library access to save pictures there</string>
+    </config-file>
+
+    <hook type="after_plugin_install" src="hooks/AfterPluginInstall.js" />
+    <hook type="before_plugin_uninstall" src="hooks/BeforePluginUninstall.js" />
+
+    <!-- Add in the plugin .swift files here -->
+    <source-file src="lib/iOS/KofaxPlugin.swift" />
+
+    <!-- Add in the swift-support plugin by default -->
+    <dependency id="cordova-plugin-add-swift-support" version="2.0.2"/>
+
+
+	<!-- core CustomCamera header and source files -->
+	<framework src="lib/iOS/kfxMobileCordova.framework" custom="true"/>
+    <framework src="lib/iOS/MobileSDK.framework" custom="true"/>
+    <resource-file src="lib/iOS/SDKStrings.bundle" custom="true"/>
+    <resource-file src="lib/iOS/uiimages.bundle" custom="true"/>
+
+
+
+
+    <framework src="CoreVideo.framework"/>
+    <framework src="SystemConfiguration.framework"/>
+    <framework src="libxml2.2.tbd"/>
+    <framework src="libc++.tbd"/>
+    <framework src="libz.tbd"/>
+    <framework src="libsqlite3.0.tbd"/>
+    <framework src="AVFoundation.framework"/>
+    <framework src="CoreMotion.framework"/>
+    <framework src="CoreMedia.framework"/>
+    <framework src="QuartzCore.framework"/>
+    <framework src="AudioToolbox.framework"/>
+    <framework src="CoreImage.framework"/>
+    <framework src="ImageIO.framework"/>
+    <framework src="CoreTelephony.framework"/>
+    <framework src="CoreGraphics.framework"/>
+    <framework src="MobileCoreServices.framework"/>
+    <framework src="AssetsLibrary.framework"/>
+    <framework src="CoreLocation.framework"/>
+    <framework src="MessageUI.framework"/>
+    <framework src="OpenGLES.framework"/>
+    <framework src="AVFoundation.framework"/>
+    <framework src="Accelerate.framework"/>
+    <framework src="Contacts.framework"/>
+    <framework src="CoreNFC.framework"/>
+    <framework src="CryptoTokenKit.framework" weak="true"/>
+
+</platform>
+<platform name="android">
+     <!-- config file -->
+    <config-file target="res/xml/config.xml" parent="/*">
+        <feature name="kfxPlugin">
+			<param name="android-package" value="com.kofax.hybrid.cordova.MainKofaxPlugin" />
+		</feature>
+    </config-file>
+
+    <config-file target="AndroidManifest.xml" parent="/*">
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.CAMERA" />
+        <uses-permission android:name="android.permission.VIBRATE"/>
+        <uses-feature android:name="android.hardware.camera" />
+        <uses-feature android:name="android.hardware.camera.autofocus" />
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+        <uses-permission android:name="android.permission.NFC" />
+
+    </config-file>
+
+    <edit-config file="AndroidManifest.xml" target="/manifest/application" mode="merge">
+        <application android:largeHeap="true" />
+    </edit-config>
+
+    <edit-config file="AndroidManifest.xml" target="/manifest/application/activity" mode="merge">
+        <activity android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection" />
+    </edit-config>
+
+    <framework src="kofax.gradle" custom="true" type="gradleReference" />
+
+    <!-- core files -->
+    <lib-file src="lib/Android/NativeLibs" />
+
+
+    <lib-file src="lib/Android/armeabi-v7a" arch="device" />
+    <lib-file src="lib/Android/arm64-v8a" arch="device" />
+
+
+    <framework src="com.android.support:support-v4:27.1.1" />
+    <framework src="com.google.android.gms:play-services-vision:10.0.1" />
+
+
+    </platform>
+</plugin>
